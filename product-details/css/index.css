@@ -260,12 +260,12 @@
   }
   
   .grid-1{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      flex-basis: 20% 20% 20% 20%;
-      padding-top: 50px;
-  }
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
   
   .items{
       background: #F2F2F2;
@@ -421,10 +421,11 @@
       }
   
       .grid-1{
-  
-          justify-content: center;
-          gap: 20px;
-      }
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2%;
+    }
   
       .grid-1-stars{
           gap: 10px;
@@ -438,3 +439,7 @@
       }
   
   }
+
+  .items img{
+    width: 100%;
+}

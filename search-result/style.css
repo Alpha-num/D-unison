@@ -120,6 +120,8 @@ input[type='search']:focus{
     font-weight: 700;
     color: #000;
 }
+
+
 @media (max-width:600px){
     .search-info h1{
         font-size: 30px;
@@ -178,8 +180,8 @@ input[type='search']:focus{
 
 .grid-1{
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
-    flex-basis: 20% 20% 20% 20%;
     justify-content: space-between;
     padding-top: 50px;
 }
@@ -333,11 +335,14 @@ input[type='search']:focus{
     }
 
     .grid-1{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 50px;
-        gap: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2%;
     }
 
+}
+
+.items img{
+    width: 100%;
 }
