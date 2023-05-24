@@ -143,6 +143,7 @@ body{
     align-items: center;
     padding: 30px;
     align-items: center;
+    
 }
 
 .navigation-2{
@@ -177,6 +178,10 @@ body{
 .navigation-1 i{
     font-size: 24px;
     color: #3692EB;
+}
+
+.navigation-1 img{
+    cursor: pointer;
 }
 
 .navigation-1 button{
@@ -533,3 +538,24 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
+.user-menu{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 320px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 10%;
+    top: 16%;
+    transition: all 300ms ease-in;
+  }
+
+  .user-menu a{
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    border-bottom: 1px solid #DFE0EB;
+    color: #1A6BBA;
+  }
