@@ -69,8 +69,8 @@
                                               <img src="assets/images/Vector.png"/>
                                               <img src="assets/images/Vector.png"/>
                                               <img src="assets/images/Vector2.png"/>
-                                              <a> 44 </a>
-                                              <p id="reveiw-btn"> 12 reveiws <i class="ri-arrow-right-line"></i>  </p>
+                                              <span> 44 </span>
+                                              <p><a href="#review">12 reveiws <i class="ri-arrow-right-line"></i></a>   </p>
                                             </div>
 
                                             <div class="avartars">
@@ -93,10 +93,19 @@
                                       </div>
                           </div>
 
-                          <div class="section-panels">
-                                  <a class="sections active" href="">Description</a>
-                                  <a class="sections" href="">Materials</a>
-                                  <a class="sections" href=""> Core instuctions </a>
+                          <div class="section-panels d-flex">
+                            <div>
+                              <a class="sections active" href="">Description</a>
+                              <a class="sections" href="">Materials</a>
+                              <a class="sections" href=""> Core instuctions </a>
+                            </div>
+                                  <div class="bg-secondary" style="font-size: 10px;">
+                                    <!-- Button trigger modal -->
+                                      <button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="bi bi-journal-text me-1"></i>Write Review
+                                      </button>
+                                  </div>
+                                  
                           </div>
                           
                           <p class="prod-description">
@@ -107,6 +116,80 @@
             </div>
         </div>        
     </div>
+    <div class="review-container container">
+        <h3 class="fw-bold ms-3 p-3 position-relative heading mb-3 ">Customers Reviews </h3>
+        <div class="review-section" id="review">
+            <div class="review-card">
+                <div class="profile mb-2">
+                    <div class="profile-img d-flex justify-content-center align-items-center">
+                        M
+                    </div>
+                    <div class="profile-name">
+                        <span class="title">Mary Doe</span>
+                        <div class="star">
+                            <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector2.png"/>
+                                              <img src="assets/images/Vector2.png"/>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    <p>I have used this product for over 5 years now, and I can
+                        bold say it's the best out there.
+                    </p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="profile mb-2">
+                    <div class="profile-img d-flex justify-content-center align-items-center">
+                        J
+                    </div>
+                    <div class="profile-name">
+                        <span class="title">John Doe</span>
+                        <div class="star">
+                            <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector2.png"/>
+                                              <img src="assets/images/Vector2.png"/>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    <p>Quality are the only words that describe this product. Wonderful experience so far!
+                    </p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="profile mb-2">
+                    <div class="profile-img d-flex justify-content-center align-items-center">
+                        J
+                    </div>
+                    <div class="profile-name">
+                        <span class="title">John Doe</span>
+                        <div class="star">
+                            <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector.png"/>
+                                              <img src="assets/images/Vector2.png"/>
+                                              <img src="assets/images/Vector2.png"/>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    <p>I have used this product for over 5 years now, and I can
+                        bold say it's the best out there.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="main-content mt-0">
         <div class="grid-1">
             <div class="items">
@@ -174,10 +257,56 @@
 
         </div>
     </div>
+<<<<<<< HEAD
     <script src="./script.js"></script>
         
     
     <script src="bootstrap/js/bootstrap.min.js"></script>
     
+=======
+
+    <!-- This Modal allows customers to enter their review -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Review</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <!--MODAL BODY AND FORM ELEMENTS -->
+
+          <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email in your review.</div>
+  </div>
+  <div class="mb-3">
+    <label for="name" class="form-label">Full names</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Enter Review</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+</form>
+
+
+        <!--MoDAL BODY AND FORM ELEMENTS -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+>>>>>>> 86dcc34c6cd166ffe47819fdb7676a2219a08f8d
   </body>
 </html>
