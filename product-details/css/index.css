@@ -204,9 +204,27 @@
       padding: 20px;
       background-color: #F2F2F2;
       border-radius: 16px;
+      flex-direction: column;
       display: flex;
-      gap: 30px;
+      width: 200px;
+      gap: 20px;
+      cursor: pointer;
+      transition: all 500ms;
   }
+
+  .reveiws-list{
+    color: #969696;
+    font-size: 18px;
+    display: none;
+  }
+
+  .reveiws-list li{
+    margin-top: 10px;
+  }
+
+  /* .stars:hover{
+    width: 80%;
+  } */
   
   .avartars{
       display: flex;
