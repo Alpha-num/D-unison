@@ -62,9 +62,17 @@
                     <button> create a store </button>
                     <i class="ri-chat-4-fill"></i>
                     <i class="ri-notification-2-fill"></i>
-                    <img src="svg/Ellipse1.png"/>
-                </div>         
+                    <img src="svg/Ellipse1.png" id="user-img"/>
+                </div>     
+                <div class="user-menu" id="user-menu">
+                    <a href="">Sign Out</a>
+                    <a href="">Profile</a>
+                    <a href="" class="last">lorem</a>
+                </div>    
             </div>
+
+           
+            
             <div class="profits-parent">
                 <div class="profits profit-1">
                     <a> Total Stores </a>
@@ -169,7 +177,21 @@
     <script>
         const navbarBtn = document.getElementById('navbar-btn');
         const sidenav = document.getElementById('sidenav');
+        const userAvartar  =document.getElementById('user-img')
+        const userMenu = document.getElementById("user-menu")
 
+        let toggleDiplay = true
+
+        userMenu.style.opacity = "0"
+
+        userAvartar.onclick = () => {  
+                toggleDiplay = !toggleDiplay
+                
+                toggleDiplay ? userMenu.style.opacity = "1" : userMenu.style.opacity = "0"
+
+        }
+
+        
         navbarBtn.addEventListener('click', function() {
             sidenav.style.display = sidenav.style.display === 'none' ? 'block' : 'none';
       });
