@@ -259,6 +259,11 @@
       margin-top: 10px;
       color: #000000;
   }
+  .grid-1-stars a{
+    text-decoration: none;
+    color: #969696; 
+    
+  }
   
   .grid-1{
     display: flex;
